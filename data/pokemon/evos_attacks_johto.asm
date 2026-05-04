@@ -101,6 +101,7 @@ EvosAttacksPointers2::
 	dw LugiaEvosAttacks
 	dw HoOhEvosAttacks
 	dw CelebiEvosAttacks
+	dw MoonfloraEvosAttacks
 .IndirectEnd::
 
 ChikoritaEvosAttacks:
@@ -630,6 +631,7 @@ AipomEvosAttacks:
 
 SunkernEvosAttacks:
 	dbbw EVOLVE_ITEM, SUN_STONE, SUNFLORA
+	dbbw EVOLVE_ITEM, MOON_STONE, MOONFLORA
 	db 0 ; no more evolutions
 	dbw 1, ABSORB
 	dbw 4, GROWTH
@@ -1402,4 +1404,15 @@ CelebiEvosAttacks:
 	dbw 30, FUTURE_SIGHT
 	dbw 40, BATON_PASS
 	dbw 50, PERISH_SONG
+	db 0 ; no more level-up moves
+
+MoonfloraEvosAttacks:
+	db 0 ; no more evolutions
+	dbw 1, ABSORB
+	dbw 1, POUND
+	dbw 4, GROWTH
+	dbw 10, RAZOR_LEAF
+	dbw 19, MOONLIGHT
+	dbw 31, HYPNOSIS
+	dbw 46, PSYCHIC_M
 	db 0 ; no more level-up moves

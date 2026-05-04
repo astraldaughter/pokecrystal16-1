@@ -7,6 +7,8 @@
 	const VIOLETCITY_FRUIT_TREE
 	const VIOLETCITY_POKE_BALL1
 	const VIOLETCITY_POKE_BALL2
+	const VIOLETCITY_SAGE
+	const VIOLETCITY_ROSIE
 
 VioletCity_MapScripts:
 	def_scene_scripts
@@ -67,6 +69,12 @@ VioletCityGrampsScript:
 
 VioletCityYoungsterScript:
 	jumptextfaceplayer VioletCityYoungsterText
+
+VioletCitySageScript:
+	jumptextfaceplayer VioletCitySageText
+
+VioletCityRosieScript:
+	jumptextfaceplayer VioletCityRosieText
 
 VioletCitySign:
 	jumptext VioletCitySignText
@@ -248,6 +256,42 @@ VioletCityYoungsterText:
 	cont "dances! Cool!"
 	done
 
+VioletCitySageText:
+	text "My apologies,"
+	line "child. I cannot"
+
+	para "let you in,"
+	line "whether you're"
+	
+	para "here for the GYM"
+	line "challenge or not."
+
+	para "The GYM LEADER is"
+	line "out at the moment,"
+
+	para "and worship is"
+	line "currently ongoing."
+	done
+
+VioletCityRosieText:
+	text "Some youthful"
+	line "punk is really"
+
+	para "roughing up"
+	line "everyone in the"
+	cont "dojo…"
+
+	para "Can you make sure"
+	line "everyone is okay"
+	cont "in there?"
+	
+	para "If he's some sort"
+	line "of criminal, I"
+
+	para "don't want anyone"
+	line "getting hurt!"
+	done
+
 VioletCitySignText:
 	text "VIOLET CITY"
 
@@ -310,3 +354,5 @@ VioletCity_MapEvents:
 	object_event 14, 29, SPRITE_FRUIT_TREE, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, VioletCityFruitTree, -1
 	object_event  4,  1, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, VioletCityPPUp, EVENT_VIOLET_CITY_PP_UP
 	object_event 35,  5, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, VioletCityRareCandy, EVENT_VIOLET_CITY_RARE_CANDY
+	object_event 23,  6, SPRITE_GRAMPS, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, VioletCitySageScript, -1
+	object_event 17, 18, SPRITE_GRANNY, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, VioletCityRosieScript, -1

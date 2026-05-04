@@ -154,12 +154,7 @@ pokecrystal11_vc.gbc: RGBFIXFLAGS += -i BYTE -n 1
 
 gfx/pokemon/%/front.animated.2bpp: gfx/pokemon/%/front.2bpp gfx/pokemon/%/front.dimensions
 	tools/pokemon_animation_graphics -o $@ $^
-gfx/pokemon/%/front.animated.tilemap: gfx/pokemon/%/front.2bpp gfx/pokemon/%/front.dimensions
-	tools/pokemon_animation_graphics -t $@ $^
-gfx/pokemon/%/bitmask.asm: gfx/pokemon/%/front.animated.tilemap gfx/pokemon/%/front.dimensions
-	tools/pokemon_animation -b $^ > $@
-gfx/pokemon/%/frames.asm: gfx/pokemon/%/front.animated.tilemap gfx/pokemon/%/front.dimensions
-	tools/pokemon_animation -f $^ > $@
+	tools/trim_animation.sh $@ $(word 2,$^)
 
 
 ### Pokemon and trainer sprite rules

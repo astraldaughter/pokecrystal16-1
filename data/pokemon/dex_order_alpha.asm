@@ -137,6 +137,7 @@ AlphabeticalPokedexOrder:
 	dw MILTANK
 	dw MISDREAVUS
 	dw MOLTRES
+	dw MOONFLORA
 	dw MR__MIME
 	dw MUK
 	dw MURKROW

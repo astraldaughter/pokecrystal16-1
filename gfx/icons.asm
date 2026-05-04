@@ -196,6 +196,7 @@ SkiploomIcon::   INCBIN "gfx/icons/skiploom.2bpp"
 JumpluffIcon::   INCBIN "gfx/icons/jumpluff.2bpp"
 AipomIcon::      INCBIN "gfx/icons/aipom.2bpp"
 SunkernIcon::    INCBIN "gfx/icons/sunkern.2bpp"
+MoonfloraIcon::
 SunfloraIcon::   INCBIN "gfx/icons/sunflora.2bpp"
 YanmaIcon::      INCBIN "gfx/icons/yanma.2bpp"
 WooperIcon::     INCBIN "gfx/icons/wooper.2bpp"

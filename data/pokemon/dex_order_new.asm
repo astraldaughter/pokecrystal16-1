@@ -105,6 +105,7 @@ NewPokedexOrder:
 	dw YANMA
 	dw SUNKERN
 	dw SUNFLORA
+	dw MOONFLORA
 	dw EXEGGCUTE
 	dw EXEGGUTOR
 	dw SUDOWOODO

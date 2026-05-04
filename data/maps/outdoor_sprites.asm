@@ -406,6 +406,7 @@ VioletGroupSprites:
 	db SPRITE_WEIRD_TREE
 	db SPRITE_POKE_BALL
 	db SPRITE_FRUIT_TREE
+	db SPRITE_GRANNY
 
 EcruteakGroupSprites:
 	db SPRITE_SUICUNE
